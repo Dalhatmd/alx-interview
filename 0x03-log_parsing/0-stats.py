@@ -4,9 +4,9 @@ import re
 import signal
 
 pattern = re.compile(
-    r'^\d{1,3}(\.\d{1,3}){3} - \[\d{2}/\w{3}/\d{4}(:\d{2}){3} \+\d{4}\] '
-    r'"GET /projects/\d+ HTTP/1\.1" (200|301|400|401|403|404|405|500) \d+$'
-)
+        r'^\d{1,3}(\.\d{1,3}){3} - \[\d{2}/\w{3}/\d{4}(:\d{2}){3} \+\d{4}\] '
+        r'"GET /projects/\d+ HTTP/1\.1" (200|301|400|401|403|404|405|500) \d+$'
+                    )
 
 total_file_size = 0
 line_count = 0
