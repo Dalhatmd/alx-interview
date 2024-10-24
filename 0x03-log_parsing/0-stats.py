@@ -21,6 +21,7 @@ status_code_count = {
     500: 0
 }
 
+
 def print_statistics():
     """Function to print statistics."""
     print(f"File size: {total_file_size}")
@@ -28,10 +29,12 @@ def print_statistics():
         if status_code_count[code] > 0:
             print(f"{code}: {status_code_count[code]}")
 
+
 def signal_handler(sig, frame):
     """Handle CTRL + C and print statistics before exiting."""
     print_statistics()
     sys.exit(0)
+
 
 signal.signal(signal.SIGINT, signal_handler)
 
