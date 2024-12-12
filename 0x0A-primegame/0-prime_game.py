@@ -28,7 +28,6 @@ def isWinner(x, nums):
 
     for n in nums:
         prime_count = count_primes(n, is_prime)
-        # Maria wins if the number of primes is odd; Ben wins otherwise.
         if prime_count % 2 == 1:
             maria_wins += 1
         else:
