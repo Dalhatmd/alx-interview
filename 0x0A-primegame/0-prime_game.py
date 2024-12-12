@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ PrimeGame module """
 
+
 def isWinner(x, nums):
     def sieve(max_n):
         """Precomputes prime numbers up to max_n """
