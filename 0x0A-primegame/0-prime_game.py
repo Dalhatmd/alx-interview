@@ -3,6 +3,7 @@
 
 
 def isWinner(x, nums):
+    """ Finds a winner """
     def sieve(max_n):
         """Precomputes prime numbers up to max_n """
         is_prime = [True] * (max_n + 1)
